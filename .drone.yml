@@ -20,7 +20,7 @@ steps:
   - name: stage-binaries
     image: maiwj/dapper:windows-1809
     commands:
-      - "Get-ChildItem -Path ./bin; Copy-Item -Force -Path ./bin/wins.exe -Destination ./package/; Copy-Item -Force -Path ./bin/wins.exe -Destination ./; Get-ChildItem -Path ./package/"
+      - "Get-ChildItem -Path ./bin; Copy-Item -Force -Path ./bin/wins.exe -Destination ./package/; Copy-Item -Force -Path ./bin/wins.exe -Destination ./; Get-ChildItem -Path ./package/; Get-ChildItem -Path ./"
 
   - name: github_binary_release
     image: plugins/github-release
