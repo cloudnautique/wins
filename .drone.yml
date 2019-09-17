@@ -28,7 +28,7 @@ steps:
       api_key:
         from_secret: github_token
       files:
-        - ./wins.exe
+        - ./bin/wins.exe
 
 volumes:
   - name: docker_pipe
