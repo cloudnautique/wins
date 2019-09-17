@@ -28,7 +28,7 @@ steps:
       api_key:
         from_secret: github_token
       files:
-        - .\\package\\*
+        - \\\\drone\\src\\package\\*
 
 volumes:
   - name: docker_pipe
